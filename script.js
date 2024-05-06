@@ -12,7 +12,7 @@ function sendData(email, password){
     });
 }
 
-sendData(email, password)
+let sendDataVar = sendData(email, password)
     .then(response => {
         alert(response);
     })
@@ -20,4 +20,4 @@ sendData(email, password)
         alert(error);
     });
 
-export {email, password, sendData}
+export {email, password, sendDataVar}

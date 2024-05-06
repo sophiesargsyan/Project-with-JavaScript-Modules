@@ -1,6 +1,6 @@
 'use strict';
 
-fetch('https://fakestoreapi.com/products')
+let fetchVar = fetch('https://fakestoreapi.com/products')
     .then(response => response.json())
     .then(data => {
     data.forEach(product => {
@@ -16,4 +16,4 @@ async function getItem(id) {
   
 getItem(1);
 
-export {fetch, getItem}
+export {fetchVar, getItem}
